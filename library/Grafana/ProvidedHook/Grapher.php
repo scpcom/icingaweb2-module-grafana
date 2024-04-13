@@ -55,6 +55,13 @@ class Grapher extends GrapherHook
     protected $cacheTime = 300;
     protected $grafanaVersion = "0";
     protected $defaultdashboarduid;
+    protected $object = null;
+    protected $dashboard;
+    protected $dashboarduid;
+    protected $panelId;
+    protected $orgId;
+    protected $customVars;
+    protected $permission;
 
     protected function init()
     {
